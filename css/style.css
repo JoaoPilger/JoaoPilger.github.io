@@ -1,0 +1,573 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-family: "Staatliches", sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.staatliches-regular {
+    font-family: "Staatliches", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+:root{
+    --main-color: #C1FF5B;
+    --second-color: #000;
+    --third-color: #90BC47;
+    --normal-color: #FFE55B;
+    --vip-color: #5BFFF5;
+    --premium-color: #905BFF;
+    --dark-blue-color: #464DE7;
+}
+
+header{
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo > p{
+    color: white;
+    font-size: 36px;
+    display: inline;
+}
+.logo > div{
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    background-color: var(--main-color);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo div > div{
+    height: 15px;
+    width: 15px;
+    background-color: var(--second-color);
+    border-radius: 50%;
+    display: inline;
+}
+
+header section nav{
+    display: flex;
+    gap: 50px;
+}
+header section nav a{
+    font-size: 28px;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+header section nav a:hover{
+    color: var(--main-color);
+    transform: scale(1.2);
+}
+header section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 200px;
+    width: 100%;
+}
+.hero{
+    background-image: url("../img/hero.jpg");
+    background-size: cover;
+    height: 960px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.hero > div{
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    width: 100%;
+    height: 100%;
+    gap: 65px;
+    padding:  0 200px;
+}
+
+.texto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.texto :first-child{
+    font-size: 148px;
+    background-image: -webkit-linear-gradient(0deg, var(--main-color), white);
+    background-clip: text;
+    color: transparent;
+    text-align: center;
+    max-width: 800px;
+    margin-top: 50px;
+}
+
+.texto :last-child{
+    font-size: 56px;
+    color: transparent;
+    background-image: -webkit-linear-gradient(0deg, white, var(--main-color));
+    background-clip: text;
+    text-align: center;
+    max-width: 770px;
+}
+.botao{
+    display: flex;
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease-in-out;
+}
+.botao div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(var(--main-color), var(--third-color));
+    height: 150px;
+    width: 500px;
+    box-shadow: 0px 5px 2px rgba(0, 0, 0, 0.2);
+    margin-top: 100px;
+    transition: 0.3s ease-in-out;
+}
+.botao div:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+.botao div p{
+    font-size: 48px;
+    text-shadow: 0 5px 2px var(--third-color);
+}
+
+.visitados{
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 200px 100px 200px;
+}
+.visitados > p{
+    font-size: 96px;
+    margin: 0 0  50px 0;
+}
+.visitados > div{
+    gap: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+.content{
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+    transform-style: preserve-3d;
+}
+.content:hover{
+    transform:rotateY(180deg) scale(1.1);
+    background-color: var(--);
+}
+.img p{
+    font-size: 28px;
+}
+.back, .front{
+    backface-visibility: hidden;
+    max-width: 450px;
+    max-height: 300px;
+}
+.back{
+    transform: rotateY(180deg);
+    position: absolute;
+    background-color: white;
+    width: 450px;
+    height: 300px;
+    top: 0;
+    left: 0;
+}
+.back > div{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+}
+.back > div > p{
+    font-size: 20px;
+    max-width: 250px;
+}
+.comprar{
+    padding: 20px 20px;
+    background-color: var(--main-color);
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.comprar:hover{
+    transform: scale(1.1);
+    background-color: var(--third-color);
+}
+
+.transportes{
+    width: 100%;
+    display: flex;
+    background-image: url("../img/fundoCarrosel.jpeg");
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.transportes > div{
+    gap: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 50px 0 100px 0;
+}
+.flecha{
+    font-size: 60px;
+    color: var(--main-color);
+    transition: 0.5s;
+}
+.flecha:hover{
+    cursor: pointer;
+    color: var(--third-color);
+    transform: scale(1.2);
+}
+.transportes > div > p{
+    font-size: 96px;
+    color: var(--main-color);
+}
+.transportes > div > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 25px;
+}
+.carrossel{
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    max-width:55%;
+}
+.slideDiv{
+    display: flex;
+    gap: 50px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    transition: 1s ease-in-out;
+}
+.slide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    transform: translateX(0);
+    transition: 1s ease-in-out;
+}
+
+.slide p{
+    margin: 20px;
+    font-size: 36px;
+}
+.atividades{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color);
+    flex-direction: column;
+    padding: 50px 0 75px 0;
+    gap: 50px;
+}
+.atividades > p{
+    font-size: 96px;
+}
+.atividadePrinc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 50px;
+}
+.atividadeExtra{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    max-width: 774px;
+}
+.um :first-child{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    font-size: 28px;
+}
+.atividadeExtraInside{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.ativi{
+    width: 360px;
+    height: 200px;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.ativi > img{
+    width: 360px;
+    height: 165px;
+}
+.ativi p{
+    font-size: 28px;
+}
+.pacotes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    background-image: url("../img/fundoPassaportes.jpeg");
+    background-size: cover;
+    width: 100%;
+}
+.pacotes > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 50px 200px 75px 200px;
+    gap: 50px;
+}
+.pacotes > div > p{
+    font-size: 96px;
+    color: var(--main-color);
+}
+.pacotes > div > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.direito{
+    height: 200px;
+    width: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.direito p{
+    transform: rotate(-90deg);
+    font-size: 28px;
+    min-width: 200px;
+    text-align: center;
+}
+.ticket{
+    height: 200px;
+    width: 490px;
+    background-color: white;
+    gap: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color: var(--second-color);
+    font-size: 36px;
+    flex-direction: column;
+}
+.ticket > div:first-child{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.ticket > div:last-child{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    width: 300px;
+    height: 75px;
+}
+.ticket > div > div{
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    background-color: var(--main-color);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.ticket > div > div > div{
+    height: 15px;
+    width: 15px;
+    background-color: var(--second-color);
+    border-radius: 50%;
+    display: inline;
+}
+.destaque{
+    height: 170px;
+    border: 1px black dashed;
+    stroke-width: 4;
+    stroke-dasharray: 8;
+}
+.normal{
+    background-color: var(--normal-color);
+}
+.ticket > .normal:hover{
+    background-color: #f8d837;
+    transform: scale(1.1);
+}
+.vip{
+    background-color: var(--vip-color);
+}
+.ticket > .vip:hover{
+    background-color:#3cdacf;
+    transform: scale(1.1);
+}
+.premium{
+    background-color: var(--premium-color);
+}
+.ticket > .premium:hover{
+    background-color:#7d43fa;
+    transform: scale(1.1);
+}
+.ticket > .premium, .ticket >.normal, .ticket >.vip{
+    cursor: pointer;
+    transition: 0.5s;
+    
+}
+.esquerdo{
+    height: 200px;
+    width: 150px;
+    border-radius: 20px;
+}
+.promocoes{
+    background-color: var(--main-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 50px;
+    padding: 50px 0 75px 0;
+}
+.promocoes > p{
+    font-size: 96px;
+}
+.promocoes > div{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.promocoes > div > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.promocoes > div > div > i{
+    font-size: 70px;
+    transition: 0.5s;
+}
+.promocoes > div > div > i:hover{
+    transform: scale(1.3);
+    cursor: pointer;
+}
+.promocao{
+    width: 1300px;
+    max-height: 200px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    flex-direction: column;
+    gap: 30px;
+    transition: max-height 1s ease , padding 1s ease ;
+}
+.textPromo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 60px;
+}
+.ticketPromo > div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center ;
+    gap: 20px;
+}
+.ticketPromo > div > div{
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+}
+.promocao > div > p{
+    font-size: 64px;
+}
+.textPromo :last-child{
+    color: red;
+}
+.per25{
+    background-color: var(--vip-color);
+}
+.per30{
+    background-color: var(--dark-blue-color);
+}
+.per50{
+    background-color: var(--premium-color);
+}
+
+footer{
+    background-color: var(--second-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+footer p{
+    color: var(--main-color);
+    font-size: 36px;
+}

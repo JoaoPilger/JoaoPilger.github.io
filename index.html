@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Travelers World</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+    </style>
+</head>
+<body>
+    <header>
+        <section>
+            <div class="logo">
+                <p>travelers w</p>
+                <div>
+                    <div></div>
+                </div>
+                <p>rld</p>
+            </div>
+            <nav>
+                <a href="#visitados">lugares mais visitados</a>
+                <a href="#transportes">opções de transporte</a>
+                <a href="#atividades">atividades extras</a>
+                <a href="#pacotes">pacotes</a>
+            </nav>
+        </section>
+    </header>
+    <section class="hero">
+        <div>
+            <div class="texto">
+                <p>explore novos horizontes!</p>
+                <p>deixe a rotina para trás e  mergulhe em experiências inesquecíveis!</p>
+            </div>
+            <div class="botao">
+                <div>
+                    <p>Agendar Viagem</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <main class="main">
+        <section class="visitados" id="visitados">
+            <p>lugares mais visitados</p>
+            <div>
+                <div class="card">
+                    <div class="content">
+                        <div class="front img">
+                            <img src="img/havai.jpeg" alt="" width="450px" height="265px">
+                            <p>havai</p>
+                        </div>
+                        <div class="back img">
+                            <div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate alias eligendi quidem praesentium</p>
+                                <div class="comprar">comprar agora</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <div class="front img">
+                            <img src="img/bahamas.jpeg" alt="" width="450px" height="265px">
+                            <p>bahamas</p>
+                        </div>
+                        <div class="back img">
+                            <div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate alias eligendi quidem praesentium</p>
+                                <div class="comprar">comprar agora</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <div class="front img">
+                            <img src="img/veneza.jpeg" alt="" width="450px" height="265px">
+                            <p>veneza</p>
+                        </div>
+                        <div class="back img">
+                            <div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate alias eligendi quidem praesentium</p>
+                                <div class="comprar">comprar agora</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <div class="front img">
+                            <img src="img/moscow.jpeg" alt="" width="450px" height="265px">
+                            <p>moscow</p>
+                        </div>
+                        <div class="back img">
+                            <div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate alias eligendi quidem praesentium</p>
+                                <div class="comprar">comprar agora</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <div class="front img">
+                            <img src="img/rioDeJaneiro.jpeg" alt="" width="450px" height="265px">
+                            <p>rio de janeiro</p>
+                        </div>
+                        <div class="back img">
+                            <div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate alias eligendi quidem praesentium persentium algum</p>
+                                <div class="comprar">comprar agora</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <div class="front img">
+                            <img src="img/losAngeles.jpeg" alt="" width="450px" height="265px">
+                            <p>los angeles</p>
+                        </div>
+                        <div class="back img">
+                            <div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate alias eligendi quidem praesentium</p>
+                                <div class="comprar">comprar agora</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="transportes" id="transportes">
+            <div>
+                <p>opções de transporte</p>
+                <div>
+                    <i class="fa-solid fa-arrow-left flecha" onclick="mudaImg2()"></i>
+                    <div class="carrossel" id="carrossel">
+                        <div id="slide" class="slideDiv">
+                            <div class="slide">
+                                <img src="img/onibus.jpeg" alt="" width="500px" height="510px">
+                                <p>ônibus</p>
+                            </div>
+                            <div class="slide">
+                                <img src="img/carro.jpeg" alt="" width="500px" height="510px">
+                                <p>carro</p>
+                            </div>
+                            <div class="slide">
+                                <img src="img/barco.jpg" alt="" width="500px" height="510px">
+                                <p>navio</p>
+                            </div>
+                            <div class="slide">
+                                <img src="img/aviao.jpeg" alt="" width="500px" height="510px">
+                                <p>avião</p>
+                            </div>
+                            <div class="slide">
+                                <img src="img/bicicleta.avif" alt="" width="500px" height="510px">
+                                <p>bicicleta</p>
+                            </div>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-arrow-right flecha" onclick="mudaImg1()"></i>
+                </div>
+            </div>
+        </section>
+        <section class="atividades" id="atividades">
+            <p>atividades extras</p>
+            <div class="atividadePrinc">
+                <div class="atividadeExtra um">
+                    <div>
+                        <img src="img/acampamento.jpeg" alt="" width="775px" height="415px">
+                        <p>acampamento</p>
+                    </div>
+                    <div class="atividadeExtraInside">
+                        <div class="ativi">
+                            <img src="img/paintball.jpeg" alt="">
+                            <p>paintball</p>
+                        </div>
+                        <div class="ativi">
+                            <img src="img/trilha.jpeg" alt="">
+                            <p>trilha</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="atividadeExtra">
+                    <div class="ativi">
+                        <img src="img/motocross.jpeg" alt="">
+                        <p>motocross</p>
+                    </div>
+                    <div class="ativi">
+                        <img src="img/skydiving.jpeg" alt="">
+                        <p>skydiving</p>
+                    </div>
+                    <div class="ativi">
+                        <img src="img/mergulho.jpeg" alt="">
+                        <p>mergulho</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="pacotes" id="pacotes">
+            <div>
+                <p>pacotes</p>
+                <div>
+                    <div class="direito normal">
+                        <p>pacote normal</p>
+                    </div>
+                    <div class="ticket">
+                        <div>
+                            <p>travelers w</p>
+                            <div>
+                                <div></div>
+                            </div>
+                            <p>rld</p>
+                        </div>
+                        <div class="normal">
+                            <p>ver benefícios</p>
+                        </div>
+                    </div>
+                    <div class="destaque"></div>
+                    <div class="esquerdo normal"></div>
+                </div>
+                <div>
+                    <div class="direito vip">
+                        <p>pacote vip</p>
+                    </div>
+                    <div class="ticket">
+                        <div>
+                            <p>travelers w</p>
+                            <div>
+                                <div></div>
+                            </div>
+                            <p>rld</p>
+                        </div>
+                        <div class="vip">
+                            <p>ver benefícios</p>
+                        </div>
+                    </div>
+                    <div class="destaque"></div>
+                    <div class="esquerdo vip"></div>
+                </div>
+                <div>
+                    <div class="direito premium">
+                        <p>pacote premium</p>
+                    </div>
+                    <div class="ticket">
+                        <div>
+                            <p>travelers w</p>
+                            <div>
+                                <div></div>
+                            </div>
+                            <p>rld</p>
+                        </div>
+                        <div class="premium">
+                            <p>ver benefícios</p>
+                        </div>
+                    </div>
+                    <div class="destaque"></div>
+                    <div class="esquerdo premium"></div>
+                </div>
+            </div>
+        </section>
+        <section class="promocoes">
+            <p>promoções</p>
+            <div>
+                <div>
+                    <div class="promocao per25" id="promoNormal">
+                        <div class="textPromo">
+                            <p>combo carnaval</p>
+                            <p>(25% off)</p>
+                        </div>
+                        <div class="ticketPromo" id="ticketPromoNormal">
+                            <div>
+                                <div class="front img">
+                                    <img src="img//rioDeJaneiro.jpeg" alt="" width="350px" height="170px">
+                                    <p>rio de janeiro</p>
+                                </div>
+                                <div>
+                                    <div class="direito premium">
+                                        <p>pacote premium</p>
+                                    </div>
+                                    <div class="ticket">
+                                        <div>
+                                            <p>travelers w</p>
+                                            <div>
+                                                <div></div>
+                                            </div>
+                                            <p>rld</p>
+                                        </div>
+                                        <div class="premium">
+                                            <p>comprar agora!</p>
+                                        </div>
+                                    </div>
+                                    <div class="destaque"></div>
+                                    <div class="esquerdo premium"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-caret-down" id="normal"></i>
+                </div>
+                <div>
+                    <div class="promocao per30" id="promoVip">
+                        <div class="textPromo">
+                            <p>combo águas azuis</p>
+                            <p>(30% off)</p>
+                        </div>
+                        <div class="ticketPromo" id="ticketPromoVip">
+                            <div></div>
+                            <div>
+                                <div>
+                                    <div class="direito normal">
+                                        <p>pacote normal</p>
+                                    </div>
+                                    <div class="ticket">
+                                        <div>
+                                            <p>travelers w</p>
+                                            <div>
+                                                <div></div>
+                                            </div>
+                                            <p>rld</p>
+                                        </div>
+                                        <div class="normal">
+                                            <p>comprar agora!</p>
+                                        </div>
+                                    </div>
+                                    <div class="destaque"></div>
+                                    <div class="esquerdo normal"></div>
+                                </div>
+                                <div class="front img">
+                                    <img src="img/bahamas.jpeg" alt="" width="350px" height="170px">
+                                    <p>bahamas</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-caret-down" id="vip"></i>
+                </div>
+                <div>
+                    <div class="promocao per50" id="promoPremium">
+                        <div class="textPromo">
+                            <p>combo cinema</p>
+                            <p>(50% off)</p>
+                        </div>
+                        <div class="ticketPromo" id="ticketPromoPremium">
+                            <div>
+                                <div class="front img">
+                                    <img src="img/losAngeles.jpeg" alt="" width="350px" height="170px">
+                                    <p>los angeles</p>
+                                </div>
+                                <div>
+                                    <div class="direito vip">
+                                        <p>pacote vip</p>
+                                    </div>
+                                    <div class="ticket">
+                                        <div>
+                                            <p>travelers w</p>
+                                            <div>
+                                                <div></div>
+                                            </div>
+                                            <p>rld</p>
+                                        </div>
+                                        <div class="vip">
+                                            <p>comprar agora!</p>
+                                        </div>
+                                    </div>
+                                    <div class="destaque"></div>
+                                    <div class="esquerdo vip"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-caret-down" id="premium"></i>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por: João Victor Pilger</p>
+    </footer>
+    <script src="https://kit.fontawesome.com/3fb66d1327.js" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
